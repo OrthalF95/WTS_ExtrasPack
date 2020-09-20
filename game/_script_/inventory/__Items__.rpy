@@ -72,7 +72,7 @@ default poster_gryffindor_ITEM = Item(id="gryffindor", name="Gryffindor Poster",
 default poster_hufflepuff_ITEM = Item(id="hufflepuff", name="Hufflepuff Poster", cost=2, type="poster", image="posters/hufflepuff", description="Make your stance that you support the house of Hufflepuff with this themed poster.")
 default poster_ravenclaw_ITEM = Item(id="ravenclaw", name="Ravenclaw Poster", cost=2, type="poster", image="posters/ravenclaw", description="Make your stance that you support the house of Ravenclaw with this themed poster.")
 default poster_slytherin_ITEM = Item(id="slytherin", name="Slytherin Poster", cost=2, type="poster", image="posters/slytherin", description="Make your stance that you support the house of Slytherin with this themed poster.")
-default poster_hermione_ITEM = Item(id="hermione", name="Hermione Chibi Poster", cost=2, type="poster", image="posters/hermione", description="A little lewdness for the office, don't worry. With a special illusion charm no one but you will notice a thing....")
+default poster_hermione_ITEM = Item(id="hermione", name="Hermione Chibi Poster", cost=2, type="poster", image="posters/hermione", description="A little lewdness for the office, don't worry. With a special illusion charm no one but you will notice a thing...")
 default poster_harlots_ITEM = Item(id="harlots", name="Hogwarts Harlots Poster", cost=2, type="poster", image="posters/harlots", description="Hermione showing off her true colours at last with this special poster... illusion charm included...")
 default poster_stripper_ITEM = Item(id="stripper", name="Stripper Poster", cost=2, type="poster", image="posters/stripper", description="Hermione showing off how to work the pole... illusion charm included...")
 default poster_wanted_ITEM = Item(id="wanted", name="Wanted Poster", cost=2, type="poster", image="posters/wanted", description="A Wild West styled Wanted poster depicting our dear headmaster...")
@@ -86,16 +86,16 @@ default trophy_crest_ITEM = Item(id="crest", name="Hogwarts Crest", cost=5, type
 default pinup_girl_ITEM = Item(id="_deco_1", name="Girl Pinup", cost=0, type="pinup", image="pinups/girl", description="Spice up your cupboard with this sexy pinup model...\n(Shows up when rummaging through the cupboard).", unlocked=True)
 
 # Hats
-default owl_hat_ITEM = Item(id="owl_hat", name="Owl Hat", cost=1, type="owl", imagepath="interface/icons/misc/owl_hat.png", description="A hat for an owl. Don't ask, just accept it..")
-default phoenix_hat_ITEM = Item(id="phoenix_hat", name="Phoenix Hat", cost=1, type="phoenix", imagepath="interface/icons/misc/phoenix_hat.png", description="A little something to make your friend look less depressed.")
-default fireplace_hat_ITEM = Item(id="fireplace_hat", name="Skull Hat", cost=1, type="fireplace", imagepath="interface/icons/misc/fireplace_hat.png", description="Don't let Johnny get a cold!")
+default owl_hat_ITEM = Item(id="owl_hat", name="Owl Hat", cost=1, type="owl", imagepath="interface/icons/misc/owl_hat.webp", description="A hat for an owl. Don't ask, just accept it..")
+default phoenix_hat_ITEM = Item(id="phoenix_hat", name="Phoenix Hat", cost=1, type="phoenix", imagepath="interface/icons/misc/phoenix_hat.webp", description="A little something to make your friend look less depressed.")
+default fireplace_hat_ITEM = Item(id="fireplace_hat", name="Skull Hat", cost=1, type="fireplace", imagepath="interface/icons/misc/fireplace_hat.webp", description="Don't let Johnny get a cold!")
 
-default owl_black_ITEM = Item(id="owl_idle_black", name="Black Owl", cost=3, type="mail", imagepath="interface/icons/misc/owl_black.png", description="Magically dye your mail courier black!")
+default owl_black_ITEM = Item(id="owl_idle_black", name="Black Owl", cost=3, type="mail", imagepath="interface/icons/misc/owl_black.webp", description="Magically dye your mail courier black!")
 
 # Xmas
-default fireplace_xmas_ITEM = Item(id="fireplace_tree", name="Christmas Decorations", cost=1, type="fireplace", imagepath="interface/icons/misc/fireplace_xmas.png", description="Don't let Johnny get a cold!")
-default phoenix_xmas_ITEM = Item(id="phoenix_xmas", name="Phoenix Christmas Decorations", cost=1, type="phoenix", imagepath="interface/icons/misc/phoenix_xmas.png", description="A little something to make your friend look less depressed.")
-default owl_xmas_ITEM = Item(id="owl_xmas", name="Owl Christmas hat", cost=1, type="owl", imagepath="interface/icons/misc/owl_xmas.png", description="A hat for an owl. Don't ask, just accept it..")
+default fireplace_xmas_ITEM = Item(id="fireplace_tree", name="Christmas Decorations", cost=1, type="fireplace", imagepath="interface/icons/misc/fireplace_xmas.webp", description="Don't let Johnny get a cold!")
+default phoenix_xmas_ITEM = Item(id="phoenix_xmas", name="Phoenix Christmas Decorations", cost=1, type="phoenix", imagepath="interface/icons/misc/phoenix_xmas.webp", description="A little something to make your friend look less depressed.")
+default owl_xmas_ITEM = Item(id="owl_xmas", name="Owl Christmas hat", cost=1, type="owl", imagepath="interface/icons/misc/owl_xmas.webp", description="A hat for an owl. Don't ask, just accept it..")
 
 
 default wall_deco_list = [
@@ -224,7 +224,7 @@ default hg_yennefer = CostumeItem(
 
 default hg_bioshock = CostumeItem(
     id="hg_bioshock", name="Bioshock Costume", type="outfit", items=["choker","top","jacket","bottoms"],
-    cost=her_outfit_bioshock.price, wait_time=3, image=her_outfit_bioshock, description="> Flick some coins for this shockingly inspirational\n outfit.")
+    cost=her_outfit_bioshock.price, wait_time=3, image=her_outfit_bioshock, description="> Flick some coins for this shockingly inspirational outfit.")
 
 default hg_swimsuit = CostumeItem(
     id="hg_swimsuit", name="Swimsuit", type="outfit", items=["onepiece-top"],
@@ -232,11 +232,11 @@ default hg_swimsuit = CostumeItem(
 
 default hg_egypt = CostumeItem(
     id="hg_egypt", name="Egyptian", type="outfit", items=["neck-band","top","arm bands","onepiece-bottoms"],
-    cost=her_outfit_egypt.price, wait_time=2, image=her_outfit_egypt, description="> An Egyptian themed outfit which is probably\n what Cleopatra once wore.")
+    cost=her_outfit_egypt.price, wait_time=2, image=her_outfit_egypt, description="> An Egyptian themed outfit which is probably what Cleopatra once wore.")
 
 default hg_latex_dress = CostumeItem(
     id="hg_latex_dress", name="Latex Dress", type="outfit", items=["onepiece-top"],
-    cost=her_outfit_latex_dress.price, wait_time=2, image=her_outfit_latex_dress, description="> Tight fitting and something you wouldn't\n normally find in a regular clothing store.")
+    cost=her_outfit_latex_dress.price, wait_time=2, image=her_outfit_latex_dress, description="> Tight fitting and something you wouldn't normally find in a regular clothing store.")
 
 default hg_nightie = CostumeItem(
     id="hg_nightie", name="Nightie", type="outfit", items=["onepiece-top"],
@@ -244,43 +244,43 @@ default hg_nightie = CostumeItem(
 
 default hg_poker = CostumeItem(
     id="hg_poker", name="Poke-her-nips Outfit", type="outfit_token", items=["hat","earrings","bowtie","onepiece-bra","panties","stockings"],
-    cost=10, wait_time=3, image=her_outfit_poker, description="> An outfit that doesn't leave much for the mind's desire,\n perfect for a lewd card loving girl.")
+    cost=10, wait_time=3, image=her_outfit_poker, description="> An outfit that doesn't leave much for the mind's desire, perfect for a lewd card loving girl.")
 
 default hg_tifa = CostumeItem(
     id="hg_tifa", name="Tifa Cosplay", type="outfit", items=["top","gloves","suspenders","belt","bottoms"],
-    cost=her_outfit_tifa.price, wait_time=3, image=her_outfit_tifa, description="> An outfit for when your sexual fantasies\n are just getting started.")
+    cost=her_outfit_tifa.price, wait_time=3, image=her_outfit_tifa, description="> An outfit for when your sexual fantasies are just getting started.")
 
 default hg_msmarv = CostumeItem(
     id="hg_msmarv", name="Ms. Marvel Cosplay", type="outfit", items=["onepiece-top","gloves","sash","stockings"],
-    cost=her_outfit_msmarv.price, wait_time=2, image=her_outfit_msmarv, description="> For the girl that likes the lightning bolt\n better on the chest than the forehead.")
+    cost=her_outfit_msmarv.price, wait_time=2, image=her_outfit_msmarv, description="> For the girl that likes the lightning bolt better on the chest than the forehead.")
 
 default hg_hslut = CostumeItem(
     id="hg_hslut", name="Heart Slut", type="outfit", items=["earrings","necklace","top","tassel-bra","gloves","garter-belt","stockings"],
-    cost=her_outfit_hslut.price, wait_time=2, image=her_outfit_hslut, description="> A sexy dancers outfit with heart shaped nipple\n tassels.")
+    cost=her_outfit_hslut.price, wait_time=2, image=her_outfit_hslut, description="> A sexy dancers outfit with heart shaped nipple tassels.")
 
 default hg_croft = CostumeItem(
     id="hg_croft", name="Lora Craft Cosplay", type="outfit", items=["top","shoulder-straps","bottoms","belt-holster"],
-    cost=her_outfit_croft.price, wait_time=2, image=her_outfit_croft, description="> An outfit perfectly suited for exploring deep, dark\n and moist caverns.")
+    cost=her_outfit_croft.price, wait_time=2, image=her_outfit_croft, description="> An outfit perfectly suited for exploring deep, dark and moist caverns.")
 
 default hg_witch = CostumeItem(
     id="hg_witch", name="Halloween Witch Cosplay", type="outfit", items=["onepiece-top","cape","stockings"],
-    cost=her_outfit_witch.price, wait_time=2, image=her_outfit_witch, description="> Release your inner witch with this Halloween\n inspired outfit.")
+    cost=her_outfit_witch.price, wait_time=2, image=her_outfit_witch, description="> Release your inner witch with this Halloween inspired outfit.")
 
 default hg_latex = CostumeItem(
     id="hg_latex", name="Latex Outfit", type="outfit", items=["choker","top","gloves","panties","stockings"],
-    cost=her_outfit_latex.price, wait_time=2, image=her_outfit_latex, description="> A tight fitting outfit that takes\n about twenty minutes to put on properly.")
+    cost=her_outfit_latex.price, wait_time=2, image=her_outfit_latex, description="> A tight fitting outfit that takes about twenty minutes to put on properly.")
 
 default hg_slutty_schoolgirl = CostumeItem(
     id="hg_slutty_schoolgirl", name="Slutty Schoolgirl", type="outfit", items=["top","bottoms","stockings"],
-    cost=her_outfit_slutty_schoolgirl.price, wait_time=2, image=her_outfit_slutty_schoolgirl, description="> A arguably better version of the regular\n school outfit")
+    cost=her_outfit_slutty_schoolgirl.price, wait_time=2, image=her_outfit_slutty_schoolgirl, description="> A arguably better version of the regular school outfit")
 
 default hg_teddy = CostumeItem(
     id="hg_teddy", name="Teddy Nightie", type="outfit", items=["top"],
-    cost=her_outfit_teddy.price, wait_time=2, image=her_outfit_teddy, description="> A more airy nightdress leaving not much fabric\n between you and your bed.")
+    cost=her_outfit_teddy.price, wait_time=2, image=her_outfit_teddy, description="> A more airy nightdress leaving not much fabric between you and your bed.")
 
 default hg_fishnet = CostumeItem(
     id="hg_fishnet", name="Fishnet Outfit", type="outfit", items=["top","panties"],
-    cost=her_outfit_fishnet.price, wait_time=2, image=her_outfit_fishnet, description="> An outfit for when fishnet stockings isn't enough.\n {size=-4}Dislaimer: Not effective for catching actual fish.{/size}")
+    cost=her_outfit_fishnet.price, wait_time=2, image=her_outfit_fishnet, description="> An outfit for when fishnet stockings isn't enough. {size=-4}Dislaimer: Not effective for catching actual fish.{/size}")
 
 default hg_bikini3 = CostumeItem(
     id="hg_bikini3", name="Sling Bikini Outfit", type="outfit", items=["bra","panties"],
@@ -295,11 +295,11 @@ default hg_cheerleader2 = CostumeItem(
     cost=her_outfit_cheerleader_2.price, wait_time=2, image=her_outfit_cheerleader_2, description="> So daring and bold, sporting red and gold!")
 
 default hg_extras_corset1 = CostumeItem(
-    id="hg_extras_corset1", name="Corset", type="outfit", items=["corset"],
+    id="hg_extras_corset1", name="Corset", type="outfit", items=["accessory"],
     cost=her_outfit_excorset.price, wait_time=2, image=her_outfit_excorset, description="> A padded corset for the seductive witch.")
 
 default hg_extras_dirndl = CostumeItem(
-    id="hg_extras_dirndl", name="Dirndl", type="outfit", items=["top"],
+    id="hg_extras_dirndl", name="Dirndl", type="outfit", items=["top", "bottoms"],
     cost=her_outfit_exdirndl.price, wait_time=2, image=her_outfit_exdirndl, description="> A traditional top for festivities.")
 
 default hermione_outfits_list = [hg_maid, hg_cheerleader, hg_bunny, hg_ball, hg_yennefer, hg_bioshock, hg_swimsuit, hg_egypt, hg_latex_dress, hg_nightie, hg_tifa, hg_msmarv, hg_hslut, hg_croft, hg_witch, hg_latex, hg_slutty_schoolgirl, hg_teddy, hg_fishnet, hg_bikini3, hg_bikini1, hg_bikini2, hg_cheerleader2, hg_extras_corset1, hg_extras_dirndl]
@@ -353,7 +353,7 @@ default luna_clothing_sets_list = [
 
 init offset = 1 # Initialize chunk after character class
 
-default ag_anntakamaki_ITEM = Item(id="ag_ann_takamaki", name="Ann Takamaki Cosplay Outfit", type="outfit", items=["onepiece-top","gloves", "boots", "butt-plug", "mask", "hairstyle"], image=ast_outfit_ann, cost=600, wait_time=2, description="> Legend says that the one who wears it will\nlook like a different persona...")
+default ag_anntakamaki_ITEM = Item(id="ag_ann_takamaki", name="Ann Takamaki Cosplay Outfit", type="outfit", items=["onepiece-top","gloves", "boots", "butt-plug", "mask", "hairstyle"], image=ast_outfit_ann, cost=600, wait_time=2, description="> Legend says that the one who wears it will look like a different persona...")
 
 default astoria_outfits_list=[
     #ag_boss_uniform_ITEM,
@@ -397,7 +397,7 @@ default cc_outfit_sailor_white_ITEM = CostumeItem(
 
 default cc_costume_misty_ITEM = CostumeItem(
     id="cc_costume_misty", name="Misty Costume", type="outfit", items=["top","bottoms","suspenders"],
-    cost=100, wait_time=2, image=cho_outfit_misty, description="> For trainers that want to be the very best!\n To train them is your cause!",
+    cost=100, wait_time=2, image=cho_outfit_misty, description="> For trainers that want to be the very best! To train them is your cause!",
     # Layers
     outfit_layers = ["tops/top_shirt_1","bottoms/pants_short_1","../body/arms/arm_down_l_overlay","accs/suspenders_1"]
 )
@@ -406,8 +406,9 @@ default cc_costume_misty_ITEM = CostumeItem(
 default cc_muggle_hot_ITEM = Item(id="cc_muggle_hot", name="Hot Weather Clothing", type="set", items=["top","bottoms","stockings"], image=cho_outfit_trainee, unlockable=True)
 default cc_party_slut_ITEM = Item(id="cc_party", name="Party Clothing", type="set", items=["bra","bottoms"], image=cho_outfit_party, unlockable=True)
 
-default cc_lingerie_lace_ITEM = Item(id="cc_lingerie_lace", name="Lace Lingerie", type="set", items=["earrings","choker","bra","garter-belt","panties","stockings"], image=cho_outfit_lacelingerie, cost=500, wait_time=2, description="> This lingerie set turns even the toughest tomboy\n into a cute and sexy princess!")
+default cc_lingerie_lace_ITEM = Item(id="cc_lingerie_lace", name="Lace Lingerie", type="set", items=["earrings","choker","bra","garter-belt","panties","stockings"], image=cho_outfit_lacelingerie, cost=500, wait_time=2, description="> This lingerie set turns even the toughest tomboy into a cute and sexy princess!")
 default cc_bikini_micro_ITEM  = Item(id="cc_bikini_micro", name="Micro Bikini", type="set", items=["bra","panties"], image=cho_outfit_bikini, cost=69, wait_time=2, description="> The regular size bikinis are out of stock...")
+default cc_smurfette_ITEM = Item(id="cc_smurfette", name="Smurfette Cosplay Outfit", type="set", items=["top","hat","hairstyle"], image=cho_outfit_smurfette, cost=0, wait_time=1, description="> Unleash your inner blue!")
 
 default cho_outfits_list = [
     cc_outfit_sailor_white_ITEM
@@ -428,6 +429,32 @@ default cho_clothing_sets_list = [
 
 init offset = 0
 
+init offset = 1 # Initialize chunk after character class
+
+default nt_school = Item(id="nt_school", name="Schoolgirl Outfit", type="outfit", items=["top", "skirt"], image=ton_outfit_school, cost=ton_outfit_school.price, wait_time=2, description="> A very tight school outfit back from 1995!")
+default nt_casual = Item(id="nt_casual", name="Casual Outfit", type="outfit", items=["top", "trousers"], image=ton_outfit_casual, cost=ton_outfit_casual.price, wait_time=2, description="> Very retro.")
+default nt_nightie = Item(id="nt_nightie", name="Nightie Outfit", type="outfit", items=["top"], image=ton_outfit_nightie, cost=ton_outfit_nightie.price, wait_time=2, description="> Doesn't leave much for the imagination.")
+default nt_bunny = Item(id="nt_bunny", name="Bunny suit Outfit", type="outfit", items=["one-piece suit", "pantyhose", "necktie"], image=ton_outfit_bunny, cost=ton_outfit_bunny.price, wait_time=2, description="> Vewy cute. :3")
+default nt_silky = Item(id="nt_silky", name="Silky Slut Dress", type="outfit", items=["top", "trousers"], image=ton_outfit_silky, cost=ton_outfit_silky.price, wait_time=2, description="> Disclaimer: Madam Mafkin isn't responsible for damaged nipples.")
+default nt_bikini_1 = Item(id="nt_bikini_1", name="Simple Bikini", type="outfit", items=["bra", "panties"], image=ton_outfit_bikini_1, cost=ton_outfit_bikini_1.price, wait_time=2, description="It ain't much, but it at least covers the important bits.")
+default nt_bikini_2 = Item(id="nt_bikini_2", name="Striped Bikini", type="outfit", items=["bra", "panties"], image=ton_outfit_bikini_2, cost=ton_outfit_bikini_2.price, wait_time=2, description="It ain't much, but it at least covers the important bits. Did I mention the stripes?")
+default nt_bikini_3 = Item(id="nt_bikini_3", name="Simple Bikini", type="outfit", items=["bra", "panties"], image=ton_outfit_bikini_3, cost=ton_outfit_bikini_3.price, wait_time=2, description="Show your national integrity by wearing this -- authorised by the Ministry Of Magic -- bikini set!")
+default nt_bikini_4 = Item(id="nt_bikini_4", name="Simple Bikini", type="outfit", items=["bra", "panties"], image=ton_outfit_bikini_4, cost=ton_outfit_bikini_4.price, wait_time=2, description="Label yourself a national traitor by wearing this -- authorised by the Ministry of Magic -- bikini set!")
+
+default tonks_clothing_sets_list = [
+    nt_school,
+    nt_casual,
+    nt_nightie,
+    nt_bunny,
+    nt_silky,
+    nt_bikini_1,
+    nt_bikini_2,
+    nt_bikini_3,
+    nt_bikini_4
+]
+
+init offset = 0 # Back to normal
+
 # Old outfits linked to new outfits (using the variable names)
 
 init offset = 2 # Initialize chunk after character class and character outfits
@@ -440,6 +467,7 @@ default outfit_linking = {
     cc_bikini_micro_ITEM.id:        "cho_outfit_bikini",
     cc_lingerie_lace_ITEM.id:       "cho_outfit_lacelingerie",
     cc_dress_red_ITEM.id:           "cho_outfit_dress1",
+    cc_smurfette_ITEM.id:           "cho_outfit_smurfette",
     ag_anntakamaki_ITEM.id:         "ast_outfit_ann",
     hg_bikini1.id:                  "her_outfit_bikini1",
     hg_bikini2.id:                  "her_outfit_bikini2",
@@ -466,7 +494,16 @@ default outfit_linking = {
     hg_cheerleader.id:              "her_outfit_cheerleader_1",
     hg_cheerleader2.id:             "her_outfit_cheerleader_2",
     hg_extras_corset1.id:           "her_outfit_excorset",
-    hg_extras_dirndl.id:            "her_outfit_exdirndl"
+    hg_extras_dirndl.id:            "her_outfit_exdirndl",
+    nt_school.id:                   "ton_outfit_school",
+    nt_casual.id:                   "ton_outfit_casual",
+    nt_nightie.id:                  "ton_outfit_nightie",
+    nt_bunny.id:                    "ton_outfit_bunny",
+    nt_silky.id:                    "ton_outfit_silky",
+    nt_bikini_1.id:                 "ton_outfit_bikini_1",
+    nt_bikini_2.id:                 "ton_outfit_bikini_2",
+    nt_bikini_3.id:                 "ton_outfit_bikini_3",
+    nt_bikini_4.id:                 "ton_outfit_bikini_4"
 }
 
 init offset = 0 # back to normal
