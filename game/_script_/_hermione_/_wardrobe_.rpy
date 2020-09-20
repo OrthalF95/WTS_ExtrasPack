@@ -455,17 +455,17 @@ default her_pubes_unshaved = DollCloth("hermione", ("pelvis", "pubes"), "pubes",
 
 default her_hair_ponytail = DollCloth("hermione", ("head", "hair"), "hair", "ponytail", [[152, 89, 48, 255], [195, 137, 89, 255]], unlocked=True)
 default her_hair_ponytail2 = DollCloth("hermione", ("head", "hair"), "hair", "ponytail2", [[152, 89, 48, 255], [195, 137, 89, 255]], unlocked=True)
-#default her_extras_earrings1 = DollCloth("hermione", ("head", "earrings"), "earring", "extras_earring_1", [[216, 163, 10, 255]], level=4, unlocked=True)
-#default her_extras_earrings2 = DollCloth("hermione", ("head", "earrings"), "earring", "extras_earring_2", [[233, 166, 253, 255]], level=4, unlocked=True)
+default her_extras_earrings1 = DollCloth("hermione", ("head", "earrings"), "earring", "extras_earring_1", [[216, 163, 10, 255]], level=4, unlocked=True)
+default her_extras_earrings2 = DollCloth("hermione", ("head", "earrings"), "earring", "extras_earring_2", [[233, 166, 253, 255]], level=4, unlocked=True)
 
 default her_accessory_excorset1 = DollCloth("hermione", ("misc", "accessory"), "accessory0", "extras_corset_1", [[75, 75, 75, 255], [205, 205, 205, 255]], zorder=16, level=10)
 default her_accessory_exribbon = DollCloth("hermione", ("misc", "accessory"), "accessory4", "extras_ribbon", [[255, 255, 255, 255]], level=4)
 
-#default her_top_extop1 = DollCloth("hermione", ("tops", "school"), "top", "extras_top_1", [[183, 183, 184, 255], [109, 105, 121, 255], [167, 77, 42, 255], [237, 179, 14, 255]], level=13, unlocked=True)
-default her_top_exdirndl1 = DollCloth("hermione", ("tops", "school"), "top", "extras_dirndl_1", [[255, 255, 255, 255], [90, 190, 200, 255], [255, 0, 0, 255]])
-default her_top_exdirndl2 = DollCloth("hermione", ("tops", "school"), "top", "extras_dirndl_2", [[255, 255, 255, 255], [90, 190, 200, 255], [255, 0, 0, 255]], level=10)
-#default her_top_exruffled2 = DollCloth("hermione", ("tops", "school"), "top", "extras_ruffled_2", [[235, 223, 163, 255]], unlocked=True, level=10)
-#default her_top_exlatex2 = DollCloth("hermione", ("tops", "school"), "top", "extras_latext_2", [[55, 55, 55, 255]], level=19)
+default her_top_extop1 = DollCloth("hermione", ("tops", "shirts"), "top", "extras_top_1", [[183, 183, 184, 255], [109, 105, 121, 255], [167, 77, 42, 255], [237, 179, 14, 255]], level=13, unlocked=True)
+default her_top_exdirndl1 = DollCloth("hermione", ("tops", "shirts"), "top", "extras_dirndl_1", [[255, 255, 255, 255], [90, 190, 200, 255], [255, 0, 0, 255]])
+default her_top_exdirndl2 = DollCloth("hermione", ("tops", "shirts"), "top", "extras_dirndl_2", [[255, 255, 255, 255], [90, 190, 200, 255], [255, 0, 0, 255]], level=10)
+default her_top_exruffled2 = DollCloth("hermione", ("tops", "shirts"), "top", "extras_ruffled_2", [[235, 223, 163, 255]], unlocked=True, level=10)
+default her_top_exlatex2 = DollCloth("hermione", ("tops", "shirts"), "top", "extras_latext_2", [[55, 55, 55, 255]], level=19)
 
 default her_bottom_exdirndl1 = DollCloth("hermione", ("bottoms", "skirts"), "bottom", "extras_dirndl_bottom_1", [[255, 255, 255, 255], [90, 190, 200, 255]])
 default her_bottom_exdirndl2 = DollCloth("hermione", ("bottoms", "skirts"), "bottom", "extras_dirndl_bottom_2", [[255, 255, 255, 255], [90, 190, 200, 255], [255, 255, 255, 255]])
@@ -474,5 +474,5 @@ default her_bottom_exdirndl4 = DollCloth("hermione", ("bottoms", "skirts"), "bot
 
 default her_outfit_excorset = DollOutfit([her_accessory_excorset1], price=350)
 default her_outfit_exdirndl = DollOutfit([her_accessory_exribbon, her_top_exdirndl2, her_bottom_exdirndl1, her_bottom_exdirndl3, her_bottom_exdirndl4, her_bottom_exdirndl2, her_top_exdirndl1], price=350)
-#default her_outfit_latex = DollOutfit([her_hair_base, her_top_exlatex2, her_top_latex, her_gloves_latex, her_stockings_latex, her_panties_latex, her_neckwear_latex], price=350)
+default her_outfit_latex = DollOutfit([her_hair_base, her_top_exlatex2, her_top_latex, her_gloves_latex, her_stockings_latex, her_panties_latex, her_neckwear_latex], price=350)
 
