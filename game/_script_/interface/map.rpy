@@ -15,7 +15,6 @@ default ton_map_location = "room_defense"
 
 default first_time_7th = True
 default pitch_open = True
-default inn_intro = False
 
 default map_animated = "once"
 
@@ -28,15 +27,15 @@ transform map_fadein:
     linear 1 alpha 1
 
 image map_unfold:
-    "interface/map/anim/map_03.png"
+    "interface/map/anim/map_03.webp"
     pause map_ani_time/3
-    "interface/map/anim/map_02.png" with Dissolve(map_ani_time/3)
+    "interface/map/anim/map_02.webp" with Dissolve(map_ani_time/3)
     pause map_ani_time/3
-    "interface/map/anim/map_01.png" with Dissolve(map_ani_time/3)
+    "interface/map/anim/map_01.webp" with Dissolve(map_ani_time/3)
     pause map_ani_time/3
-    "interface/map/map.png" with Dissolve(1)
+    "interface/map/map.webp" with Dissolve(1)
     pause 1
-    "interface/map/map.png"
+    "interface/map/map.webp"
 
 screen map_screen():
     tag map
@@ -52,7 +51,7 @@ screen map_screen():
     if unfold:
         add "map_unfold" xpos UI_xpos_offset ypos UI_ypos_offset zoom map_scale # 588x420
     else:
-        add "interface/map/map.png" xpos UI_xpos_offset ypos UI_ypos_offset zoom map_scale # 588x420
+        add "interface/map/map.webp" xpos UI_xpos_offset ypos UI_ypos_offset zoom map_scale # 588x420
 
     fixed:
         if unfold:
@@ -67,8 +66,8 @@ screen map_buttons():
     imagebutton:
         xpos UI_xpos_offset +112
         ypos UI_ypos_offset +234
-        idle "interface/map/room_office_idle.png"
-        hover "interface/map/room_office_hover.png"
+        idle "interface/map/room_office_idle.webp"
+        hover "interface/map/room_office_hover.webp"
         hovered SetVariable("ball_hint", "office")
         unhovered SetVariable("ball_hint", None)
         action Return("main_room")
@@ -77,8 +76,8 @@ screen map_buttons():
     imagebutton:
         xpos UI_xpos_offset +148
         ypos UI_ypos_offset +214
-        idle "interface/map/room_gryffindor_idle.png"
-        hover "interface/map/room_gryffindor_hover.png"
+        idle "interface/map/room_gryffindor_idle.webp"
+        hover "interface/map/room_gryffindor_hover.webp"
         hovered SetVariable("ball_hint", "dorm_gryffindor")
         unhovered SetVariable("ball_hint", None)
         action Return("gryffindor_dormitories")
@@ -87,8 +86,8 @@ screen map_buttons():
     imagebutton:
         xpos UI_xpos_offset +286
         ypos UI_ypos_offset +256
-        idle "interface/map/room_ravenclaw_idle.png"
-        hover "interface/map/room_ravenclaw_hover.png"
+        idle "interface/map/room_ravenclaw_idle.webp"
+        hover "interface/map/room_ravenclaw_hover.webp"
         hovered SetVariable("ball_hint", "dorm_ravenclaw")
         unhovered SetVariable("ball_hint", None)
         action Return("ravenclaw_dormitories")
@@ -97,42 +96,42 @@ screen map_buttons():
     imagebutton:
         xpos UI_xpos_offset +76
         ypos UI_ypos_offset +295
-        idle "interface/map/room_hufflepuff_idle.png"
+        idle "interface/map/room_hufflepuff_idle.webp"
         #hovered SetVariable("ball_hint", "dorm_hufflepuff")
         #unhovered SetVariable("ball_hint", None)
-        #hover "interface/map/room_hufflepuff_hover.png"
+        #hover "interface/map/room_hufflepuff_hover.webp"
         #action Return("hufflepuff_dormitories")
 
     #Slytherin
     imagebutton:
         xpos UI_xpos_offset +214
         ypos UI_ypos_offset +136
-        idle "interface/map/room_slytherin_idle.png"
+        idle "interface/map/room_slytherin_idle.webp"
         #hovered SetVariable("ball_hint", "dorm_slytherin")
         #unhovered SetVariable("ball_hint", None)
-        #hover "interface/map/room_slytherin_hover.png"
+        #hover "interface/map/room_slytherin_hover.webp"
         #action Return("slytherin_dormitories")
 
     #Weasley Store 15 x 15
     if not store_intro_done:
-        add "interface/achievements/glow.png" pos (UI_xpos_offset+246, UI_ypos_offset+231) align (0.5, 0.5) offset (15, 15) zoom 0.15 alpha 0.5 at rotate_circular
+        add "interface/achievements/glow.webp" pos (UI_xpos_offset+246, UI_ypos_offset+231) align (0.5, 0.5) offset (15, 15) zoom 0.15 alpha 0.5 at rotate_circular
     imagebutton:
         xpos UI_xpos_offset +246
         ypos UI_ypos_offset +231
-        idle "interface/map/room_weasley_store_idle.png"
-        hover "interface/map/room_weasley_store_hover.png"
+        idle "interface/map/room_weasley_store_idle.webp"
+        hover "interface/map/room_weasley_store_hover.webp"
         hovered SetVariable("ball_hint", "weasley_store")
         unhovered SetVariable("ball_hint", None)
         action Return("open_weasley_store")
 
     #Clothing Store
     if not clothing_store_intro_done:
-        add "interface/achievements/glow.png" pos (UI_xpos_offset+462, UI_ypos_offset+231) align (0.5, 0.5) offset (15, 15) zoom 0.15 alpha 0.5 at rotate_circular
+        add "interface/achievements/glow.webp" pos (UI_xpos_offset+462, UI_ypos_offset+231) align (0.5, 0.5) offset (15, 15) zoom 0.15 alpha 0.5 at rotate_circular
     imagebutton:
         xpos UI_xpos_offset +462
         ypos UI_ypos_offset +231
-        idle "interface/map/room_clothing_store_idle.png"
-        hover "interface/map/room_clothing_store_hover.png"
+        idle "interface/map/room_clothing_store_idle.webp"
+        hover "interface/map/room_clothing_store_hover.webp"
         hovered SetVariable("ball_hint", "clothing_store")
         unhovered SetVariable("ball_hint", None)
         action Return("open_clothing_store")
@@ -142,29 +141,29 @@ screen map_buttons():
     # imagebutton:
         # xpos UI_xpos_offset +314
         # ypos UI_ypos_offset +331
-        # idle "interface/map/room_potions_idle.png"
+        # idle "interface/map/room_potions_idle.webp"
         # unhovered SetVariable("ball_hint", None)
         # if store_intro_done:
-            # hover "interface/map/room_potions_hover.png"
+            # hover "interface/map/room_potions_hover.webp"
             # hovered SetVariable("ball_hint", "potions")
             # action Return("potions_room")
 
     #Room of Requirement
     if unlocked_7th:
         if not mirror_intro_done:
-            add "interface/achievements/glow.png" pos (UI_xpos_offset+116, UI_ypos_offset+160) align (0.5, 0.5) offset (15, 15) zoom 0.15 alpha 0.5 at rotate_circular
+            add "interface/achievements/glow.webp" pos (UI_xpos_offset+116, UI_ypos_offset+160) align (0.5, 0.5) offset (15, 15) zoom 0.15 alpha 0.5 at rotate_circular
         imagebutton:
             xpos UI_xpos_offset +116
             ypos UI_ypos_offset +160
             unhovered SetVariable("ball_hint", None)
             if first_time_7th == True:
-                idle "interface/map/room_ror_empty_idle.png"
-                hover "interface/map/room_ror_empty_hover.png"
+                idle "interface/map/room_ror_empty_idle.webp"
+                hover "interface/map/room_ror_empty_hover.webp"
                 hovered SetVariable("ball_hint", "room_of_req")
                 action Return("floor_7th")
             else:
-                idle "interface/map/room_ror_idle.png"
-                hover "interface/map/room_ror_hover.png"
+                idle "interface/map/room_ror_idle.webp"
+                hover "interface/map/room_ror_hover.webp"
                 hovered SetVariable("ball_hint", "room_of_req")
                 action Return("floor_7th")
 
@@ -172,8 +171,8 @@ screen map_buttons():
     imagebutton:
         xpos UI_xpos_offset +131
         ypos UI_ypos_offset +367
-        idle "interface/map/room_boat_house_idle.png"
-        hover "interface/map/room_boat_house_hover.png"
+        idle "interface/map/room_boat_house_idle.webp"
+        hover "interface/map/room_boat_house_hover.webp"
         hovered SetVariable("ball_hint", "lake")
         unhovered SetVariable("ball_hint", None)
         action Return("map_lake")
@@ -182,8 +181,8 @@ screen map_buttons():
     imagebutton:
         xpos UI_xpos_offset +103
         ypos UI_ypos_offset +12
-        idle "interface/map/room_north_courtyard_idle.png"
-        hover "interface/map/room_north_courtyard_hover.png"
+        idle "interface/map/room_north_courtyard_idle.webp"
+        hover "interface/map/room_north_courtyard_hover.webp"
         hovered SetVariable("ball_hint", "forest")
         unhovered SetVariable("ball_hint", None)
         action Return("map_forest")
@@ -191,12 +190,12 @@ screen map_buttons():
     #Attic
     if tentacle_scroll_examined:
         if not tentacle_sample:
-            add "interface/achievements/glow.png" pos (UI_xpos_offset+340, UI_ypos_offset+226) align (0.5, 0.5) offset (15, 15) zoom 0.15 alpha 0.5 at rotate_circular
+            add "interface/achievements/glow.webp" pos (UI_xpos_offset+340, UI_ypos_offset+226) align (0.5, 0.5) offset (15, 15) zoom 0.15 alpha 0.5 at rotate_circular
             imagebutton:
                 xpos UI_xpos_offset +340
                 ypos UI_ypos_offset +226
-                idle "interface/map/room_attic_closed_idle.png"
-                hover "interface/map/room_attic_closed_hover.png"
+                idle "interface/map/room_attic_closed_idle.webp"
+                hover "interface/map/room_attic_closed_hover.webp"
                 hovered SetVariable("ball_hint", "attic")
                 unhovered SetVariable("ball_hint", None)
                 action Return("map_attic")
@@ -204,8 +203,8 @@ screen map_buttons():
             imagebutton:
                 xpos UI_xpos_offset +340
                 ypos UI_ypos_offset +226
-                idle "interface/map/room_attic_open_idle.png"
-                hover "interface/map/room_attic_open_hover.png"
+                idle "interface/map/room_attic_open_idle.webp"
+                hover "interface/map/room_attic_open_hover.webp"
                 hovered SetVariable("ball_hint", "attic")
                 unhovered SetVariable("ball_hint", None)
                 action Return("map_attic")
@@ -215,10 +214,10 @@ screen map_buttons():
     imagebutton:
         xpos 700
         ypos 530
-        idle "interface/general/"+str(interface_color)+"/check_false_hidden.png"
-        hover "interface/general/"+str(interface_color)+"/check_true.png"
-        selected_idle "interface/general/"+str(interface_color)+"/check_true_hidden.png"
-        selected_hover "interface/general/"+str(interface_color)+"/check_false.png"
+        idle "interface/general/"+str(interface_color)+"/check_false_hidden.webp"
+        hover "interface/general/"+str(interface_color)+"/check_true.webp"
+        selected_idle "interface/general/"+str(interface_color)+"/check_true_hidden.webp"
+        selected_hover "interface/general/"+str(interface_color)+"/check_false.webp"
         tooltip "Toggles map folding animation"
         action ToggleVariable("map_animated", True, False)
 
@@ -260,7 +259,7 @@ label set_her_map_location(location = ""):
                 else: #Gryff Room
                     $ her_map_location = "room_g"
 
-            if hg_blowjob.trigger == True and one_of_five in [1,2,3] and weather_gen <= 3 and not daytime and not hermione_busy:
+            if hg_blowjob.trigger == True and one_of_five in [1,2,3] and weather in ("clear", "cloudy") and not daytime and not hermione_busy:
                 $ her_map_location = "forest"
 
     call update_character_map_locations
@@ -453,14 +452,14 @@ screen map_screen_characters():
     #Hermione
     if hermione_unlocked:
         if her_map_location == "forest": # Mark forest event.
-            add "interface/achievements/glow.png" pos (UI_xpos_offset+her_map_xpos, UI_ypos_offset+her_map_ypos) align (0.5, 0.5) zoom 0.15 alpha 0.5 at rotate_circular
+            add "interface/achievements/glow.webp" pos (UI_xpos_offset+her_map_xpos, UI_ypos_offset+her_map_ypos) align (0.5, 0.5) zoom 0.15 alpha 0.5 at rotate_circular
         imagebutton:
             xpos +UI_xpos_offset +her_map_xpos
             ypos +UI_ypos_offset +her_map_ypos
             xalign 0.5
             yalign 0.5
-            idle "interface/map/name_hermione.png"
-            hover "interface/map/name_hermione_hover.png"
+            idle "interface/map/name_hermione.webp"
+            hover "interface/map/name_hermione_hover.webp"
             hovered SetVariable("ball_hint", "summon_hermione")
             unhovered SetVariable("ball_hint", None)
             action Return("hermione")
@@ -472,8 +471,8 @@ screen map_screen_characters():
             ypos UI_ypos_offset+ lun_map_ypos
             xalign 0.5
             yalign 0.5
-            idle "interface/map/name_luna.png"
-            hover "interface/map/name_luna_hover.png"
+            idle "interface/map/name_luna.webp"
+            hover "interface/map/name_luna_hover.webp"
             hovered SetVariable("ball_hint", "summon_luna")
             unhovered SetVariable("ball_hint", None)
             action Return("luna")
@@ -485,8 +484,8 @@ screen map_screen_characters():
             ypos UI_ypos_offset +ast_map_ypos
             xalign 0.5
             yalign 0.5
-            idle "interface/map/name_astoria.png"
-            hover "interface/map/name_astoria_hover.png"
+            idle "interface/map/name_astoria.webp"
+            hover "interface/map/name_astoria_hover.webp"
             hovered SetVariable("ball_hint", "summon_astoria")
             unhovered SetVariable("ball_hint", None)
             action Return("astoria")
@@ -498,8 +497,8 @@ screen map_screen_characters():
             ypos UI_ypos_offset +dap_map_ypos
             xalign 0.5
             yalign 0.5
-            idle "interface/map/name_daphne.png"
-            hover "interface/map/name_daphne_hover.png"
+            idle "interface/map/name_daphne.webp"
+            hover "interface/map/name_daphne_hover.webp"
             hovered SetVariable("ball_hint", "summon_daphne")
             unhovered SetVariable("ball_hint", None)
             action Return("daphne")
@@ -511,8 +510,8 @@ screen map_screen_characters():
             ypos UI_ypos_offset +sus_map_ypos
             xalign 0.5
             yalign 0.5
-            idle "interface/map/name_susan.png"
-            hover "interface/map/name_susan_hover.png"
+            idle "interface/map/name_susan.webp"
+            hover "interface/map/name_susan_hover.webp"
             hovered SetVariable("ball_hint", "summon_susan")
             unhovered SetVariable("ball_hint", None)
             action Return("susan")
@@ -524,8 +523,8 @@ screen map_screen_characters():
             ypos UI_ypos_offset +cho_map_ypos
             xalign 0.5
             yalign 0.5
-            idle "interface/map/name_cho.png"
-            hover "interface/map/name_cho_hover.png"
+            idle "interface/map/name_cho.webp"
+            hover "interface/map/name_cho_hover.webp"
             hovered SetVariable("ball_hint", "summon_cho")
             unhovered SetVariable("ball_hint", None)
             action Return("cho")
@@ -537,8 +536,8 @@ screen map_screen_characters():
             ypos UI_ypos_offset +sna_map_ypos
             xalign 0.5
             yalign 0.5
-            idle "interface/map/name_snape.png"
-            hover "interface/map/name_snape_hover.png"
+            idle "interface/map/name_snape.webp"
+            hover "interface/map/name_snape_hover.webp"
             hovered SetVariable("ball_hint", "summon_snape")
             unhovered SetVariable("ball_hint", None)
             action Return("snape")
@@ -550,8 +549,8 @@ screen map_screen_characters():
             ypos UI_ypos_offset +ton_map_ypos
             xalign 0.5
             yalign 0.5
-            idle "interface/map/name_tonks.png"
-            hover "interface/map/name_tonks_hover.png"
+            idle "interface/map/name_tonks.webp"
+            hover "interface/map/name_tonks_hover.webp"
             hovered SetVariable("ball_hint", "summon_tonks")
             unhovered SetVariable("ball_hint", None)
             action Return("tonks")

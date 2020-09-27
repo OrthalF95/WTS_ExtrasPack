@@ -14,7 +14,7 @@ default display_character_snape = False
 default display_character_tonks = False
 
 default display_background = False
-default custom_bg_image = "images/rooms/_bg_/main_room_night.png"
+default custom_bg_image = "images/rooms/_bg_/main_room_night.webp"
 
 define color_bg_list = (
     "#d0e4ff", # baby_blue
@@ -54,7 +54,7 @@ label update_display_characters_summon_list:
     if cho_unlocked:
         $ character_summon_list.append("cho")
     if daphne_unlocked:
-        $ character_summon_list.append("daphne")
+        $ character_summon_list.append("daphne")    
     $ character_summon_list.append("genie")
     $ character_summon_list.append("snape")
     if tonks_unlocked:
@@ -387,7 +387,7 @@ label move_character:
     if character_choice == "daphne":
         $ daphne_flip = temp_flip
         call daphne_main(xpos=temp_xpos,ypos=temp_ypos)
-
+        
     if character_choice == "genie":
         $ genie_flip = temp_flip
         call gen_main(xpos=temp_xpos,ypos=temp_ypos)
@@ -434,7 +434,7 @@ label pick_custom_background:
             $ color_background = False
 
         "-Custom-":
-            $ temp_name = renpy.input("(Please enter the image name of your image located in \"images/rooms/_bg_/*****.png\"\nThe image resolution should be 1080 x 600.\nDo not add a .png at the end!)")
+            $ temp_name = renpy.input("(Please enter the image name of your image located in \"images/rooms/_bg_/*****.webp\"\nThe image resolution should be 1080 x 600.\nDo not add a .webp at the end!)")
             $ temp_name = temp_name.strip()
             call custom_bg(temp_name)
 
@@ -444,7 +444,7 @@ label custom_bg(bg=""):
     hide screen custom_background
 
     if bg != "":
-        $ custom_bg_image = "images/rooms/_bg_/"+str(bg)+".png"
+        $ custom_bg_image = "images/rooms/_bg_/"+str(bg)+".webp"
 
     show screen custom_background
     with d3
@@ -468,16 +468,16 @@ screen summon_characters():
     imagebutton:
         xpos 1028
         ypos 11
-        idle "interface/general/"+interface_color+"/button_close.png"
-        hover "interface/general/"+interface_color+"/button_close_hover.png"
+        idle "interface/general/"+interface_color+"/button_close.webp"
+        hover "interface/general/"+interface_color+"/button_close_hover.webp"
         action Jump("close_summon_characters")
 
     # Hide screen Button
     imagebutton:
         xpos 980
         ypos 11
-        idle "interface/general/"+interface_color+"/clothes.png"
-        hover "interface/general/"+interface_color+"/clothes_hover.png"
+        idle "interface/general/"+interface_color+"/clothes.webp"
+        hover "interface/general/"+interface_color+"/clothes_hover.webp"
         action Jump("hide_summon_characters")
 
     # Character Buttons
@@ -486,8 +486,8 @@ screen summon_characters():
         imagebutton:
             xpos 10
             ypos 45+(44*i)
-            idle "interface/general/"+interface_color+"/button_select.png"
-            hover "interface/general/"+interface_color+"/button_select_hover.png"
+            idle "interface/general/"+interface_color+"/button_select.webp"
+            hover "interface/general/"+interface_color+"/button_select_hover.webp"
             if character_summon_list[i] not in summoned_character_list:
                 action [SetVariable("character_choice",character_summon_list[i]), Jump("summon_a_character")]
             else:
@@ -498,13 +498,13 @@ screen summon_characters():
             imagebutton:
                 xpos 100
                 ypos 52+(44*i)
-                idle "interface/general/"+interface_color+"/clothes.png"
-                hover "interface/general/"+interface_color+"/clothes_hover.png"
+                idle "interface/general/"+interface_color+"/clothes.webp"
+                hover "interface/general/"+interface_color+"/clothes_hover.webp"
                 action [SetVariable("character_choice",character_summon_list[i]), Jump("character_face_change")]
 
             imagebutton:
                 xpos 137
                 ypos 47+(44*i)
-                idle "interface/general/"+interface_color+"/check_true.png"
-                hover "interface/general/"+interface_color+"/check_false.png"
+                idle "interface/general/"+interface_color+"/check_true.webp"
+                hover "interface/general/"+interface_color+"/check_false.webp"
                 action [SetVariable("character_choice",character_summon_list[i]), Jump("move_character")]

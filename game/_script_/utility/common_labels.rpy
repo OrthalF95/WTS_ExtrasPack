@@ -116,87 +116,87 @@ label play_sound(sound=""):
     # Objects
     if sound in ["knock", "knocking"]: # knocking
         $ renpy.play('sounds/knocking.mp3')
-    if sound in ["knock2", "knocking2"]: # knocking
+    elif sound in ["knock2", "knocking2"]: # knocking
         $ renpy.play('sounds/knocking2.mp3')
-    if sound == "door":
+    elif sound == "door":
         $ renpy.play('sounds/door.mp3')
-    if sound in ["lock","unlock"]: # lock
+    elif sound in ["lock","unlock"]: # lock
         $ renpy.play('sounds/09_lock.wav')
-    if sound in ["desk","climb_desk"]: # climb_desk
+    elif sound in ["desk","climb_desk"]: # climb_desk
         $ renpy.play('sounds/08_hop_on_desk.mp3')
-    if sound == "owl":
+    elif sound == "owl":
         play sound "sounds/owl.mp3"
 
     # Ambience
-    if sound == "applause":
+    elif sound == "applause":
         $ renpy.play('sounds/applause01.ogg')
 
     # Affection
-    if sound in ["gulp", "gulping", "swallow", "swallowing"]: # gulp
+    elif sound in ["gulp", "gulping", "swallow", "swallowing"]: # gulp
         $ renpy.play('sounds/gulp.mp3')
-    if sound == "slap_1":
+    elif sound == "slap_1":
         $ renpy.play('sounds/slap.mp3')
-    if sound == "slap": # slap_2
+    elif sound == "slap": # slap_2
         $ renpy.play('sounds/slap_02.mp3')
-    if sound == "slap_3":
+    elif sound == "slap_3":
         $ renpy.play('sounds/slap_03.mp3')
-    if sound in ["spit", "spitting"]: # spit
+    elif sound in ["spit", "spitting"]: # spit
         $ renpy.play('sounds/spit.mp3')
-    if sound in ["kick", "kicking", "bump"]: # kick
+    elif sound in ["kick", "kicking", "bump"]: # kick
         $ renpy.play('sounds/kick.ogg')
-    if sound in ["kiss", "kissing"]: # kiss
+    elif sound in ["kiss", "kissing"]: # kiss
         $ renpy.play('sounds/kiss.mp3')
-    if sound in ["insert", "inserting", "goo"]: # insert
+    elif sound in ["insert", "inserting", "goo"]: # insert
         $ renpy.play('sounds/gltch.mp3')
-    if sound == "boing":
+    elif sound == "boing":
         $ renpy.play('sounds/boing.mp3')
-    if sound in ["pop", "bottle"]: # pop
+    elif sound in ["pop", "bottle"]: # pop
         $ renpy.play('sounds/bottle.mp3')
-    if sound == "snore":
+    elif sound == "snore":
         $ renpy.play('sounds/snore1.mp3')
-    if sound == "snore_quiet":
+    elif sound == "snore_quiet":
         $ renpy.play('sounds/snore2.mp3')
-    if sound == "snore_loud":
+    elif sound == "snore_loud":
         $ renpy.play('sounds/snore3.mp3')
-    if sound == "giggle":
+    elif sound == "giggle":
         $ renpy.sound.play("sounds/giggle2_loud.mp3")
-    if sound == "gasp":
+    elif sound == "gasp":
         $ renpy.sound.play("sounds/MaleGasp.mp3")
 
     # Magic
-    if sound == "spell":
+    elif sound == "spell":
         $ renpy.play('sounds/magic2.mp3')
-    if sound == "magic":
+    elif sound == "magic":
         $ renpy.play('sounds/magic4.ogg')
 
     # Movement
-    if sound == "footsteps":
+    elif sound == "footsteps":
         $ renpy.play('sounds/footsteps.mp3')
-    if sound == "walking":
+    elif sound == "walking":
         $ renpy.play('sounds/run_04.mp3')
-    if sound == "running":
+    elif sound == "running":
         $ renpy.play('sounds/run_03.mp3')
-    if sound == "sprinting":
+    elif sound == "sprinting":
         $ renpy.play('sounds/run_02.mp3')
-    if sound in ["walking_on_grass", "grass"]: # walking_grass
+    elif sound in ["walking_on_grass", "grass"]: # walking_grass
         $ renpy.play('sounds/steps_grass.mp3')
 
     # Interface
-    if sound == "scroll":
+    elif sound == "scroll":
         $ renpy.play('sounds/scroll.mp3')
-    if sound in ["equip", "equip_inventory"]: # equip
+    elif sound in ["equip", "equip_inventory", "cloth"]: # equip
         $ renpy.play('sounds/cloth_sound.mp3')
 
     # Misc
-    if sound == "scratch":
+    elif sound == "scratch":
         $ renpy.play('sounds/scratch.wav')
-    if sound == "shatter":
+    elif sound == "shatter":
         $ renpy.play('sounds/glass_shatter.mp3')
-    if sound in ["glass_break","glass"]:
+    elif sound in ["glass_break","glass"]:
         $ renpy.play('sounds/glass_break.mp3')
 
     # Undefined sounds fallback
-    if renpy.loadable("sounds/{}.mp3".format(sound)):
+    elif renpy.loadable("sounds/{}.mp3".format(sound)):
         $ renpy.play("sounds/{}.mp3".format(sound))
 
     return
@@ -314,7 +314,7 @@ label adjust_game_difficulty(dif=None):
         $ firewhisky_ITEM.cost = 160
     return
 
-label unlock_clothing(text="", item="interface/icons/box_blue_1.png"):
+label unlock_clothing(text="", item="interface/icons/box_blue_1.webp"):
 
     $ menu_x = 0.5
     $ menu_y = 0.75 #makes the menu lower so it isn't writing over the image.
@@ -359,4 +359,23 @@ label describe_mood(name, value):
         ">[name] is calm."
     call hide_blktone
 
+    return
+
+
+label describe_mood_after_gift(was_negative, mood, change):
+    if was_negative and mood == 0:
+        call notes
+        "She's no longer upset with you."
+    elif was_negative and change < 0:
+        "But she's still upset with you."
+    elif was_negative:
+        "She's still upset with you."
+
+    return
+
+
+label notes():
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    hide screen notes
+    show screen notes
     return

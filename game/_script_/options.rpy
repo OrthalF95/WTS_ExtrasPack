@@ -124,7 +124,7 @@ define config.gc_print_unreachable = False
 ##      Extras   ##
 ###################
 
-define extras_pack_version= "0.9.0"
+define extras_pack_version= "1.0.0"
 
 ################################################
 ##           Build configuration              ##
