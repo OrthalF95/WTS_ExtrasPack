@@ -137,6 +137,8 @@ screen main_menu():
         style "mm_root"
 
     text "{color=#fff}{size=-2}[title_version]{/size}{/color}" xpos 1024 ypos 228 outlines [ (1, "#000", 0, 0) ]
+    text "{color=#fff}{size=-2}Extras Pack - v.[extras_pack_version]{/size}{/color}" xpos 880 ypos 565 outlines [ (1, "#000", 0, 0) ]
+
     if not is_release:
         vbox:
             pos (10, 10)
