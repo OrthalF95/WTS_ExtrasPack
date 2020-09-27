@@ -327,7 +327,7 @@ default her_stockings_latex = DollCloth("hermione", ("legwear", "stockings"), "s
 default her_panties_latex = DollCloth("hermione", ("panties", "bikini panties"), "panties", "latex_panties", [[55, 55, 55, 255]], level=13)
 default her_neckwear_latex = DollCloth("hermione", ("head", "neckwear"), "neckwear", "latex_choker", [[55, 55, 55, 255]], level=13)
 
-default her_outfit_latex = DollOutfit([her_hair_base, her_top_latex, her_gloves_latex, her_stockings_latex, her_panties_latex, her_neckwear_latex], price=350)
+#default her_outfit_latex = DollOutfit([her_hair_base, her_top_latex, her_gloves_latex, her_stockings_latex, her_panties_latex, her_neckwear_latex], price=350)
 
 #################
 ## Fishnet Outfit
