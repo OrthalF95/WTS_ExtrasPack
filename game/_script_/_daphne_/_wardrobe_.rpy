@@ -123,18 +123,18 @@ default dap_outfit_last = DollOutfit([dap_hair_base])
 ## Extras ##
 ############
 
-default dap_top_exauror3  = DollCloth("daphne", ("tops", "shirts"), "top", "extras_auror3",[[28, 27, 31, 255], [124, 42, 50, 255]], armfix=True, unlocked=True)
-default dap_top_exauror4  = DollCloth("daphne", ("tops", "shirts"), "top", "extras_auror4",[[28, 27, 31, 255], [124, 42, 50, 255]], armfix=True, unlocked=True)
-default dap_top_excorset2 = DollCloth("daphne", ("tops", "shirts"), "top", "extras_corset2",[[247, 206, 146, 255]], level=30, unlocked=True)
-default dap_top_exshirt1 = DollCloth("daphne", ("tops", "shirts"), "top", "extras_shirt_1",[[230, 50, 70, 255]], unlocked=True)
-default dap_top_exshirt2 = DollCloth("daphne", ("tops", "shirts"), "top", "extras_shirt_2",[[230, 50, 70, 255]], unlocked=True)
-default dap_top_exshirt3 = DollCloth("daphne", ("tops", "shirts"), "top", "extras_shirt_3",[[230, 50, 70, 255]], unlocked=True)
+#default dap_top_exauror3  = DollCloth("daphne", ("tops", "shirts"), "top", "extras_auror3",[[28, 27, 31, 255], [124, 42, 50, 255]], armfix=True, unlocked=True)
+#default dap_top_exauror4  = DollCloth("daphne", ("tops", "shirts"), "top", "extras_auror4",[[28, 27, 31, 255], [124, 42, 50, 255]], armfix=True, unlocked=True)
+#default dap_top_excorset2 = DollCloth("daphne", ("tops", "shirts"), "top", "extras_corset2",[[247, 206, 146, 255]], level=30, unlocked=True)
+#default dap_top_exshirt1 = DollCloth("daphne", ("tops", "shirts"), "top", "extras_shirt_1",[[230, 50, 70, 255]], unlocked=True)
+#default dap_top_exshirt2 = DollCloth("daphne", ("tops", "shirts"), "top", "extras_shirt_2",[[230, 50, 70, 255]], unlocked=True)
+#default dap_top_exshirt3 = DollCloth("daphne", ("tops", "shirts"), "top", "extras_shirt_3",[[230, 50, 70, 255]], unlocked=True)
 
-default dap_bottoms_expants1 = DollCloth("daphne", ("bottoms", "trousers"), "bottom", "extras_pants_1",[[240, 200, 155, 255], [130, 130, 120, 255], [205, 205, 205, 255]], armfix=True, unlocked=True)
-default dap_bottoms_expants2 = DollCloth("daphne", ("bottoms", "trousers"), "bottom", "extras_pants_2",[[155, 200, 220, 255], [130, 130, 120, 255], [205, 205, 205, 255]], armfix=True, unlocked=True)
-default dap_bottoms_expants3 = DollCloth("daphne", ("bottoms", "trousers"), "bottom", "extras_pants_3",[[155, 200, 220, 255], [130, 130, 120, 255], [205, 205, 205, 255], [245, 245, 255, 255]], armfix=True, unlocked=True)
+#default dap_bottoms_expants1 = DollCloth("daphne", ("bottoms", "trousers"), "bottom", "extras_pants_1",[[240, 200, 155, 255], [130, 130, 120, 255], [205, 205, 205, 255]], armfix=True, unlocked=True)
+#default dap_bottoms_expants2 = DollCloth("daphne", ("bottoms", "trousers"), "bottom", "extras_pants_2",[[155, 200, 220, 255], [130, 130, 120, 255], [205, 205, 205, 255]], armfix=True, unlocked=True)
+#default dap_bottoms_expants3 = DollCloth("daphne", ("bottoms", "trousers"), "bottom", "extras_pants_3",[[155, 200, 220, 255], [130, 130, 120, 255], [205, 205, 205, 255], [245, 245, 255, 255]], armfix=True, unlocked=True)
 
-default dap_extras_bikini1 = DollCloth("daphne", ("bras", "bras"), "bra", "extras_bikini_1",[[100, 220, 200, 255], [255, 255, 255, 255], [200, 200, 200, 255]], unlocked=True)
-default dap_extras_bikinib1 = DollCloth("daphne", ("panties", "panties"), "panties", "extras_bikinib_1",[[100, 220, 200, 255], [255, 255, 255, 255]], unlocked=True)
+#default dap_extras_bikini1 = DollCloth("daphne", ("bras", "bras"), "bra", "extras_bikini_1",[[100, 220, 200, 255], [255, 255, 255, 255], [200, 200, 200, 255]], unlocked=True)
+#default dap_extras_bikinib1 = DollCloth("daphne", ("panties", "panties"), "panties", "extras_bikinib_1",[[100, 220, 200, 255], [255, 255, 255, 255]], unlocked=True)
 
-default dap_extras_stockings1 = DollCloth("daphne", ("legwear", "stockings"), "stockings", "extras_stockings_1",[[177, 168, 172, 255], [45, 45, 48, 255]], armfix=True, unlocked=True)
+#default dap_extras_stockings1 = DollCloth("daphne", ("legwear", "stockings"), "stockings", "extras_stockings_1",[[177, 168, 172, 255], [45, 45, 48, 255]], armfix=True, unlocked=True)

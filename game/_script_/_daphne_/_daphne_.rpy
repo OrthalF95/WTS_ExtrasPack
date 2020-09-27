@@ -120,7 +120,7 @@ label end_daphne_event:
     $ daphne.wear("all")
 
     $ renpy.stop_predict(daphne.get_image())
-    $ renpy.stop_predict("characters/daphne/face/*.png")
+    $ renpy.stop_predict("characters/daphne/face/*.wepb")
 
     call music_block
     jump main_room
