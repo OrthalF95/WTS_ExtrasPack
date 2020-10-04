@@ -184,19 +184,19 @@ screen stats_menu(xx, yy):
         style "empty"
         pos (xx, yy)
         xsize 207
-        ysize 454
+        ysize 504
 
         use invisible_button()
 
         add "interface/achievements/"+interface_color+"/panel_left.webp"
 
         vbox:
-            pos (6, 384)
+            pos (6, 434)
             button action NullAction() style "empty" xsize 195 ysize 32
             frame:
                 style "empty"
                 textbutton "Show locked:" style "empty" xsize 195 ysize 32 text_align (0.4, 0.5) text_size 12 hover_background btn_hover action ToggleVariable("stats_show_locked", True, False)
-                add "interface/frames/"+str(interface_color)+"/check_"+str(stats_show_locked).lower()+".webp" xalign 0.8 ypos 4
+                add "interface/frames/"+str(interface_color)+"/check_stats_"+str(stats_show_locked).lower()+".webp" xalign 0.8 ypos 4
         vbox:
             pos (6, 6)
             for category in stats_categories_sorted:
@@ -294,7 +294,7 @@ screen stats_menuitem(xx, yy):
                     add "interface/characters/cho_locked.webp" zoom 0.4 align (0.65, 1.0)
             elif current_category == "Daphne":
                 if current_item["flag"]:
-                    #add dap.get_image() zoom 0.4 align (0.65, 1.0)
+                    add daphne.get_image() zoom 0.4 align (0.65, 1.0)
                     pass
                 else:
                     #add "interface/characters/dap_locked.webp" zoom 0.4 align (0.65, 1.0)
