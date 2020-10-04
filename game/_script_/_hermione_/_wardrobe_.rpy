@@ -327,7 +327,7 @@ default her_stockings_latex = DollCloth("hermione", ("legwear", "stockings"), "s
 default her_panties_latex = DollCloth("hermione", ("panties", "bikini panties"), "panties", "latex_panties", [[55, 55, 55, 255]], level=13)
 default her_neckwear_latex = DollCloth("hermione", ("head", "neckwear"), "neckwear", "latex_choker", [[55, 55, 55, 255]], level=13)
 
-default her_outfit_latex = DollOutfit([her_hair_base, her_top_latex, her_gloves_latex, her_stockings_latex, her_panties_latex, her_neckwear_latex], price=350)
+#default her_outfit_latex = DollOutfit([her_hair_base, her_top_latex, her_gloves_latex, her_stockings_latex, her_panties_latex, her_neckwear_latex], price=350)
 
 #################
 ## Fishnet Outfit
@@ -471,6 +471,8 @@ default her_bottom_exdirndl1 = DollCloth("hermione", ("bottoms", "skirts"), "bot
 default her_bottom_exdirndl2 = DollCloth("hermione", ("bottoms", "skirts"), "bottom", "extras_dirndl_bottom_2", [[255, 255, 255, 255], [90, 190, 200, 255], [255, 255, 255, 255]])
 default her_bottom_exdirndl3 = DollCloth("hermione", ("bottoms", "skirts"), "bottom", "extras_dirndl_bottom_3", [[255, 255, 255, 255], [90, 190, 200, 255]])
 default her_bottom_exdirndl4 = DollCloth("hermione", ("bottoms", "skirts"), "bottom", "extras_dirndl_bottom_4", [[255, 255, 255, 255], [90, 190, 200, 255], [255, 255, 255, 255]])
+
+default her_robe_exrob1 = DollCloth("hermione", ("misc", "robes"), "robe", "bioshock_robe", [[255, 255, 255, 255], [90, 190, 200, 255], [255, 0, 0, 255]], unlocked=True, level=4)
 
 default her_outfit_excorset = DollOutfit([her_accessory_excorset1], price=350)
 default her_outfit_exdirndl = DollOutfit([her_accessory_exribbon, her_top_exdirndl2, her_bottom_exdirndl1, her_bottom_exdirndl3, her_bottom_exdirndl4, her_bottom_exdirndl2, her_top_exdirndl1], price=350)

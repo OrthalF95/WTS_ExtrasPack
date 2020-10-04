@@ -116,19 +116,6 @@ default current_room  = "main_room"
 default room_deco     = ""
 default cupboard_deco = ""
 
-# Scale factors (because most images are 2x larger)
-# Scale-ratio of each character can be changed to be used in custom "CG" scenes. Made larger, more zoomed in,...
-default scaleratio          = 2
-default genie_scaleratio    = 2
-default snape_scaleratio    = 2
-default tonks_scaleratio    = 2
-default hermione_scaleratio = 2
-default luna_scaleratio     = 2
-default astoria_scaleratio  = 2
-default susan_scaleratio    = 2
-default cho_scaleratio      = 2
-default daphne_scaleratio      = 2
-
 # CGs
 default ccg_folder = "luna_bj"
 default ccg1       = "herm"
@@ -136,15 +123,7 @@ default ccg2       = 1
 default ccg3       = "gene"
 default loopimage  = None
 default cg_image   = "e2"
-default cg_path    = "images/CG/"+cg_image+".png"
-
-default sc_cg_base    = "images/CG/sc34/1/base_1.png"
-default sc_cg_image_1 = "images/CG/sc34/1/A_1.png"
-default sc_cg_image_2 = "images/CG/sc34/2/B_1.png"
-default sc_cg_image_3 = "images/CG/sc34/2/C_1.png"
-
-default sccgxpos = 200
-default sccgypos = 50
+default cg_path    = "images/CG/"+cg_image+".webp"
 
 # CG or chibis
 default face_on_cg = False # `call her_main(,ypos="head")` will use screen "her_face". Face gets positioned automatically.
